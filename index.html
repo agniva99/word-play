@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Word Collection</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <navbar>
+    <div>Word Visualiser</div>
+    <div class="dict"><a>Dictionary</a></div>
+    <div class="thes"><a>Thesaurus</a></div>
+    <div class="game"><a href="game.html" target="_blank" rel="noopener noreferrer">Word Game</a></div>
+    <div style="width:70vw"></div>
+    <div id="contact" data-modal-target="#modal"><a>Contact Me</a></div>
+  </navbar>
+  <div class="container">
+    <div class="box">
+      <h2>Your go-to dictionary application</h2>
+      <div class="search">
+        <input id="word" name="word" placeholder="Enter word to search">
+        <button id="submit">Search</button>
+      </div>
+      <div class="result" id="result">
+
+      </div>
+      <div id="synonym"></div>
+      <div id="antonym"></div>
+    </div>
+  </div>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Contact Me</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      This website is developed by Agniva Mukhopadhyay<br>
+      <input placeholder="Name"><br>
+      <input placeholder="Email"><br>
+      <button>Submit</button>
+    </div>
+  </div>
+  <div id="overlay"></div>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

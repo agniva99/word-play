@@ -1,0 +1,98 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  margin: 0px;
+}
+
+navbar {
+  display: flex;
+  background-color: #3A98B9;
+  height: 8vh;
+  align-items: center;
+}
+
+navbar div {
+  width: auto;
+  padding-left: 15px;
+  font-style: Arial;
+  color: white;
+
+}
+
+#contact {
+  float: right;
+}
+
+.game a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E8D5C4;
+  height: 92vh;
+  overflow: hidden;
+}
+
+.box {
+  height: 450px;
+  width: 450px;
+  background-color: #EEEEEE;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+#submit {
+  margin-left: 4px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 24px;
+  cursor: pointer;
+}
+
+#random {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top:10px;
+  font-size: 18px;
+  color:purple;
+
+}
+
+.box h2 {
+  text-align: center;
+}
+
+.result#pic img {
+  height: 100px;
+  margin-top: 10px;
+  justify-content: center;
+  margin-left: 30px;
+  float: right;
+}
+
+.input {
+  margin-bottom: 15px;
+}
+
+#pic {
+  text-align: center;
+}
+
+a:hover {
+  opacity: 0.5;
+
+}

@@ -1,0 +1,186 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0px;
+}
+
+navbar {
+  display: flex;
+  background-color: #3A98B9;
+  height: 8vh;
+  align-items: center;
+}
+
+navbar div {
+  width: auto;
+  padding-left: 15px;
+  font-style: Arial;
+  color: white;
+
+}
+
+#contact {
+  float: right;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.game a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E8D5C4;
+  height: 92vh;
+  overflow: hidden;
+}
+
+.box {
+  height: 300px;
+  width: 450px;
+  background-color: #EEEEEE;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#word {
+  height: 25px;
+  width: 20vw;
+}
+
+#submit {
+  margin-left: 4px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 24px;
+  cursor: pointer;
+}
+
+input {}
+
+.sa {
+  font-style: italic;
+}
+
+.details {
+  color: #888181;
+
+
+
+}
+
+#result {
+  margin-top: 25px;
+
+}
+
+.box h2 {
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+#submit:hover {
+  opacity: 0.5;
+
+}
+
+.dict:hover {
+  opacity: 0.5;
+
+}
+
+.thes:hover {
+  opacity: 0.5;
+
+}
+
+#contact:hover {
+  opacity: 0.5;
+}
+
+.game a:hover {
+  opacity: 0.5;
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
